@@ -3,7 +3,7 @@
     stages {
         stage('Clonar código') {
             steps {
-                git 'https://github.com/SaulBT/mi-repo.git'
+                git branch: 'main', url:'https://github.com/SaulBT/mi-repo.git'
             }
         }
         stage('Compilar') {
